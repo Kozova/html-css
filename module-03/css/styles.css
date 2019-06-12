@@ -1,95 +1,76 @@
-body {
+body, p, button {
     font-family: "Playfair Display", serif;
-    color: #626262;
-}
-li.main-menu-item {
-    display: inline-block;
-    margin-bottom: 10px;
-    padding: 10px;
-    font: 14px;
-    width: 113px;
-    height: 42px;
-    text-align: center;
     font-size: 14px;
-    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 24px;
     color: #626262;
 }
-a {   
-    text-decoration-line: none;
-} 
-li a:hover {
+.wrapper {
+    width: 900px;
+    margin: 0 auto;
+}
+.menu-nav ul {
+    text-align: center;
+}
+.menu-nav li {
+    display: inline-block;
+    margin-top: 75px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+}
+.menu-nav li:last-child {
+    margin-right: 0;
+}
+.menu-nav li a {
+    text-transform: uppercase;
+}
+.menu-nav li a:hover {
     color: #03a9f4;
 }
 .content {
-    padding-right: 150px;
-    padding-left: 150px;
+    font-size: 0;
 }
 .articles {
     display: inline-block;
-    width: 450px;
-    padding-right: 60px;
-    padding-bottom: 30px;
-    vertical-align: top;
-}
-h2.title {
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 36px;
-    margin: 0;    
-    margin-bottom: 40px;
-}
-p.text {
-    margin: 0;
-    font-weight: 400;
+    width: 420px;
+    margin-right: 60px;
     font-size: 14px;
-    line-height: 24px
+    margin-bottom: 130px;
 }
-.menu {
-    padding-left: 300px;
+.articles:nth-child(even) {
+    margin-right: 0;
 }
-.category {
+.articles :nth-last-child(-n+2) {
+    margin-bottom: 55px;
+}
+.articles img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.articles .img-category {
+    font: 300 14px 'Ubuntu', sans-serif;
     text-transform: uppercase;
+    color: #b4ad9e;
+    margin-top: 26px;
+    margin-bottom: 30px;
 }
-h2 {
-    line-height: 24px;
-    font: 14px;
+.articles h2 {
+    font-size: 30px;
+    margin-bottom: 35px;
 }
+
 .button-container {
     display: block;
     width: 100px;
     box-sizing: content-box;
-    border: none;
+    border: 1px;
 }
-.button {
+.button-mr {
     display: block;
-    height: 60px;
-    margin: 55px auto;
+    margin: 0 auto;
     font-size: 20px;
-    line-height: 24px;
-    margin-left: 540px;
-}
-p.img-category {
-    margin: 0;
-    margin-bottom: 30px;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 300;
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 17px;
-    color: #b4ad9e;
-}
-.button {
-    text-align: center;
-    border-width: 1px;
-    margin: 0;
-    padding: 0;
-    height: 60px;
-    width: 164px;
-    border-color: black;
-    cursor: pointer;
-    font-size: 20px;
-    font-family: Playfair Display;
-    margin-bottom: 15px;
-    margin-left: 540px;
-    background: white;
+    border: 1px solid;
+    padding: 20px 35px;
+    margin-bottom: 75px;
 }

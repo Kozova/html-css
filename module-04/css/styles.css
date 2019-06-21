@@ -1,10 +1,9 @@
-.features-list {
-  margin: 0px;
-  padding: 0px;
-}
+
 
 html {
     box-sizing: border-box;
+    margin-top: 35px;
+    margin-bottom: 35px;
   }
   
   *,
@@ -18,17 +17,15 @@ html {
     content: '';
     clear: both;
   }
+
   .wrapper {
     width: 1110px;
     margin: 0 auto;
-    margin-top: 125px;
-    margin-bottom: 80px;
   }
   
   img {
     display: block;
     max-width: 100%;
-  
     height: auto;
   }
   
@@ -42,12 +39,12 @@ html {
   }
   
   .logo {
-    display: inline-block;
     text-transform: uppercase;
     text-decoration: none;
     font-size: 30px;
     color: rgb(85, 82, 82);
     font-family: 'Roboto', sans-serif;
+    float: left;
   }
   
   .logo::first-letter {
@@ -90,19 +87,22 @@ html {
   
   .features {
     margin-bottom: 105px;
+    margin: 0 auto;
   }
   
+  .features-list {
+    margin: 0px;
+    padding: 0px;
+    
+    margin-bottom: 100px;
+  }
+
   .features-list-item {
     width: 255px;
     float: left;
     list-style: none;
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
-  }
-  .features-list-item::before {
-    content: '';
-    display: block;
-    min-width: 100%;
   }
   
   .features-list-item:not(:nth-child(4n)) {
@@ -124,7 +124,8 @@ html {
   }
   
   .features-list-item p {
-    background-color: rgb(81, 81, 81);
+    background-color: #8C8C8C;
+    color: #ffffff;
     width: 55px;
     height: 40px;
     float: right;
@@ -132,7 +133,6 @@ html {
     line-height: 40px;
     text-align: center;
     margin: 0;
-    color: #ffffff;
   }
   
   .features-list-item:hover > p {
@@ -163,6 +163,8 @@ html {
     color: rgb(85, 82, 82);
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
+    margin-bottom: 95px;
+    display: inline-block;
   }
   
   h2::after {
@@ -194,20 +196,20 @@ html {
   .news-list-item {
     float: left;
     width: 350px;
+    height: 542px;
     background-color: #ffffff;
     margin-right: 30px;
     font-family: 'Open Sans', sans-serif;
+    vertical-align: center;
   }
   
   .news-list-item:last-child {
     margin-right: 0px;
   }
   
-  .news-list-item img {
+  .img {
     width: 350px;
     height: 260px;
-    background-color: rgb(233, 240, 253);
-    background-size: cover;
     margin-bottom: 32px;
   }
   
@@ -223,6 +225,7 @@ html {
     text-align: left;
     font-size: 18px;
     color: rgb(85, 82, 82);
+    margin-top: 15px;
   }
   
   .news-list-item h3::after {
@@ -233,6 +236,7 @@ html {
     width: 165px;
     margin: 0;
     margin-bottom: 32px;
+    margin-top: 15px;
   }
     
   .news-list-item a {
@@ -249,6 +253,13 @@ html {
     font-family: 'Open Sans', sans-serif;
     display: block;
     width: 165px;
+  }
+  
+  .headline {
+    display: inline-block;
+    width: 1170px;
+    margin: 0 auto;
+    margin-bottom: 80px;
   }
 
 

@@ -91,8 +91,8 @@ img {
 .features-list {
   margin: 0px;
   padding: 0px;
-  
   margin-bottom: 100px;
+  margin: 0 auto;
 }
 
 .features-list-item {
@@ -162,7 +162,7 @@ h2 {
   text-transform: uppercase;
   font-family: 'Roboto', sans-serif;
   margin-bottom: 95px;
-  display: inline-block;
+  margin: 0 auto;
 }
 
 h2::after {
@@ -254,12 +254,9 @@ h2::after {
 }
 
 .headline {
-  display: inline-block;
-  /*width: 1170px;*/
   margin: 0 auto;
   margin-bottom: 80px;
 }
-h2.headline {
-  margin: 0 auto;
-  align-content: center;
+section.features {
+  margin-bottom: 70px;
 }

@@ -1,0 +1,293 @@
+@font-face {
+    font-family: "Dancing Script";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/DancingScript/dancing-script-v10-latin-700.woff")
+        format("woff2"),
+      url("../fonts/DancingScript/dancing-script-v10-latin-700.woff2")
+        format("woff");
+  }
+  
+  @font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Monserrat/montserrat-v13-cyrillic_latin-regular.woff2")
+        format("woff2"),
+      url("../fonts/Monserrat/montserrat-v13-cyrillic_latin-regular.woff")
+        format("woff");
+  }
+  
+  @font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/Monserrat/montserrat-v13-cyrillic_latin-700.woff2")
+        format("woff2"),
+      url("../fonts/Monserrat/montserrat-v13-cyrillic_latin-700.woff")
+        format("woff");
+  }
+  
+  @font-face {
+    font-family: "DM Serif";
+    font-style: italic;
+    font-weight: 400;
+    src: url("../fonts/DmSerif/dm-serif-text-v1-latin-italic.woff2")
+        format("woff2"),
+      url("../fonts/DmSerif/dm-serif-text-v1-latin-italic.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/RobotoSlab/roboto-slab-v8-latin-regular.woff2")
+        format("woff2"),
+      url("../fonts/RobotoSlab/roboto-slab-v8-latin-regular.woff") format("woff");
+  }
+  
+  :root {
+    --hover-color: #fed136;
+    --text-color: #777777;
+    --title-color: #222222;
+    --form-color: #bbbbbb;
+  }
+  
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: var(--text-color);
+  }
+  
+  .container {
+    width: 950px;
+    margin: 0 auto;
+  }
+  
+  /* HEADER */
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0 100px;
+  }
+  
+  h1 a {
+    text-decoration: none;
+    font-size: 26px;
+    letter-spacing: 1px;
+    font-family: "Dancing Script", "Times New Roman", Times, serif;
+    color: var(--hover-color);
+  }
+  
+  /* MENU */
+  
+  .menu {
+    display: flex;
+    list-style: none;
+  }
+  
+  .menu li {
+    margin-right: 30px;
+  }
+  
+  .menu li:last-child {
+    margin-right: 0px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 41px;
+    color: var(--title-color);
+  }
+  
+  .menu a:hover {
+    color: var(--hover-color);
+  }
+  
+  /* MAIN */
+  
+  /* Section services */
+  
+  h2 {
+    text-align: center;
+    font-family: "Monserrat", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    color: var(--title-color);
+    line-height: 75px;
+  }
+  
+  .title-italic {
+    font-size: 16px;
+    letter-spacing: 0px;
+    font-family: "DM Serif", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    text-transform: none;
+    text-align: center;
+    padding-bottom: 75px;
+  }
+  
+  .services-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .services-text {
+    text-align: center;
+  }
+  .services-item {
+    width: 284px;
+    margin: 0 49px 120px 0;
+  }
+  
+  .services-item:last-child {
+    margin-right: 0px;
+  }
+  
+  .services-text h3 {
+    font-size: 18px;
+    line-height: 75px;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: var(--title-color);
+  }
+  
+  .services-text::before {
+    display: block;
+    width: 66px;
+    height: 66px;
+    content: "";
+    margin: 0 auto;
+    border: 2px solid var(--hover-color);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .services-text:nth-child(1)::before {
+    background-image: url(../img/icon/icon-basket.png);
+  }
+  
+  .services-text:nth-child(2)::before {
+    background-image: url(../img/icon/icon-laptop.png);
+  }
+  
+  .services-text:nth-child(3)::before {
+    background-image: url(../img/icon/icon-locked.png);
+  }
+  
+  .services-text p {
+    font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  /* Section Contact us */
+  
+  .contact-us {
+    height: auto;
+    background-color: var(--title-color);
+    background-image: url(../img/map.png);
+    background-repeat: no-repeat;
+    background-position: 100% 90%;
+  }
+  
+  .contact-us h2 {
+    padding-top: 110px;
+    color: #ffffff;
+  }
+  
+  /* Form */
+  
+  form {
+    padding-bottom: 110px;
+  }
+  
+  .form-group {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+  }
+  
+  .form-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-info:not(:last-child) {
+    margin-right: 30px;
+  }
+  
+  .form-info input {
+    margin-bottom: 30px;
+    width: 455px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding-left: 20px;
+    color: var(--text-color);
+    line-height: 50px;
+    font-family: "Monserrat", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+  }
+  input::placeholder {
+    color: var(--form-color);
+    text-transform: uppercase;
+  }
+  
+  .form-info input:last-child {
+    margin-bottom: 0;
+  }
+  
+  .form-group textarea {
+    border-radius: 2px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding-left: 20px;
+    color: var(--text-color);
+    line-height: 50px;
+    font-family: "Monserrat", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    resize: none;
+  }
+  
+  .form-group textarea::placeholder {
+    color: var(--form-color);
+    text-transform: uppercase;
+  }
+  
+  .form-btn {
+    text-align: center;
+  }
+  
+  button {
+    width: 240px;
+    height: 65px;
+    border-radius: 3px;
+    background-color: var(--hover-color);
+    text-align: center;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-weight: 700;
+  }
+  
+  .input-valid:valid {
+    outline-color: green;
+  }
+  
+  .input-valid:invalid {
+    outline-color: red;
+  }

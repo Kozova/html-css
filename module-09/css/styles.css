@@ -24,7 +24,7 @@ img {
 
 .wrapper {
     background-color: #1a1915;
-    background-image: url("../img/vector-smart.png");
+    background-image: url("../img/vector1.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -198,7 +198,7 @@ h1 a {
 @media (min-width: 768px) {
     .wrapper {
         min-height: 700px;
-        background-image: url("../img/vector-smarttablet.png");
+        background-image: url("../img/vectortablet.png");
     }
 
     .slaider {

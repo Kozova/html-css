@@ -24,7 +24,7 @@ img {
 
 .wrapper {
     background-color: #1a1915;
-    background-image: url("../img/Vector-Smart.png");
+    background-image: url("../img/vector-smart.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -158,22 +158,22 @@ h1 a {
 }
 
  .partners-item:nth-child(1) .partners-foto::after {
-    background-image: url("../img/icon/iconPartner1.png");
+    background-image: url("../img/icon/iconpartner1.png");
     background-color: #ff4e50;
 }
 
 .partners-item:nth-child(2) .partners-foto::after {
-    background-image: url("../img/icon/iconPartner2.png");
+    background-image: url("../img/icon/iconpartner2.png");
     background-color: #1bd7ad;
 }
 
 .partners-item:nth-child(3) .partners-foto::after {
-    background-image: url("../img/icon/iconPartner3.png");
+    background-image: url("../img/icon/iconpartner3.png");
     background-color: #ffa507;
 }
 
 .partners-item:nth-child(4) .partners-foto::after {
-    background-image: url("../img/icon/iconPartner4.png");
+    background-image: url("../img/icon/iconpartner4.png");
     background-color: #4e73db;
 }
 
@@ -198,7 +198,7 @@ h1 a {
 @media (min-width: 768px) {
     .wrapper {
         min-height: 700px;
-        background-image: url("../img/Vector-SmartTablet.png");
+        background-image: url("../img/vector-smarttablet.png");
     }
 
     .slaider {

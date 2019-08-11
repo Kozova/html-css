@@ -1,0 +1,17 @@
+
+.header {
+  @include flex-jastify ("between");
+}
+
+.header_page {
+  padding-top: 20px;
+  font-family: $main-font;
+  font-weight: 700;
+  color: $banner-color;
+}
+
+.logo_link {
+  @extend %link;
+  font-size: 30px;
+  color: $banner-color;
+}

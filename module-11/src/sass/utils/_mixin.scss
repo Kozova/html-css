@@ -1,0 +1,37 @@
+@mixin flex-jastify($type) {
+  display: flex;
+  @if $type== 'between' {
+    justify-content: space-between;
+  }
+  @if $type== 'between-center' {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @if $type== 'center' {
+    justify-content: center;
+  }
+  @if $type== 'center-center' {
+    justify-content: center;
+    align-items: center;
+  }
+  @if $type== 'start' {
+    justify-content: start;
+  }
+
+  @if $type== 'end' {
+    justify-content: end;
+  }
+}
+
+@mixin size-text($size: 14px, $weight: 300, $height: inherit) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+}
+
+@mixin image-with-gradient ($gradient, $path, $size: cover, $repeat: no-repeat) {
+  background-image: $gradient, $path;
+  background-size: $size;
+  background-repeat: $repeat;
+}

@@ -1,0 +1,90 @@
+.team {
+  padding-top: 80px;
+  font-family: $main-font;
+  color: $main-text-color;
+}
+
+.team--text {
+  font-family: $text-font;
+  @include size-text(15px, 400, 24px);
+  color: $text-color-light;
+  text-align: center;
+  padding: 42px 3% 90px;
+}
+
+.team--position {
+  font-family: $text-font;
+  font-weight: 300;
+  font-style: italic;
+  color: $text-color-light;
+  text-align: center;
+}
+
+.team--name {
+  @include size-text(14px, 400, 44px);
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 15px;
+}
+
+.team_card {
+  @include flex-jastify('between');
+}
+
+.team_foto {
+  position: relative;
+
+  &:hover {
+    transform: translate(-10px, -10px);
+    box-shadow: 10px 10px 0px 0px rgba(149, 225, 211, 1);
+    transition: 0.2s linear;
+
+    & .overline_foto {
+      background: linear-gradient(
+        to top,
+        rgba(252, 227, 138, 0.9),
+        rgba(242, 129, 129, 0.9)
+      );
+    }
+
+    & .overline_btn {
+      display: flex;
+    }
+  }
+}
+
+.team_list {
+  padding-bottom: 90px;
+  width: 380px;
+}
+
+.overline_btn {
+  @extend %absolute-center;
+  width: 220px;
+  height: 55px;
+  display: none;
+  font-size: 0;
+}
+
+.overline_btn--link {
+  @extend %link;
+  @include flex-jastify('center-center');
+  width: 55px;
+  height: 55px;
+  background-color: $hover-color;
+
+  &:hover {
+    background-color: $gradiend-color;
+
+    & .overline_icon {
+      fill: $banner-color;
+    }
+  }
+}
+
+.overline_icon {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  fill: $gradiend-color;
+}

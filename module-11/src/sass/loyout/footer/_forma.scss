@@ -1,0 +1,28 @@
+.form-subscription_btn {
+  background-color: $icon-color;
+  text-transform: uppercase;
+  width: 150px;
+  height: 40px;
+  color: $banner-color;
+  font-family: $main-font;
+  @include size-text(14px, 400);
+  text-align: center;
+  @extend %button-reset;
+}
+
+.form-subscription_email {
+  min-width: 230px;
+  height: 40px;
+  border: 1px solid $border-color;
+  font-size: 15px;
+  padding: 0 10px;
+  border-right: none;
+
+  &::placeholder {
+    color: $text-color-light;
+    font-family: $text-font;
+    @include size-text(15px, 300);
+    font-style: italic;
+    padding: 0 10px;
+  }
+}
